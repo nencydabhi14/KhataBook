@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_height="450dp">
+
+    <RelativeLayout
+        android:id="@+id/up_out"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#DF1837"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="OUT"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/up_out"
+        android:id="@+id/container_main_dailog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp">
+
+
+        <EditText
+            android:id="@+id/customer_name_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D6D6D6"
+            android:hint="Customer name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/customer_no_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name_edt_d"
+            android:backgroundTint="#D6D6D6"
+            android:hint="Customer number"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/amount_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_no_edt_d"
+            android:backgroundTint="#D6D6D6"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_grup_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount_edt_d"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/cash_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#DF1837"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Cash"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/online_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:buttonTint="#DF1837"
+                android:fontFamily="sans-serif-medium"
+                android:text="Online"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/details_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_grup_d"
+            android:backgroundTint="#D6D6D6"
+            android:hint="details"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/date_edt_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_edt_d"
+            android:backgroundTint="#D6D6D6"
+            android:hint="Date"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="#929292"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/submit_btn_d"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/container_main_dailog"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/ripal_effect_rectangle">
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:backgroundTint="#DF1837"-->
+        <!--            android:text="SUBMIT"-->
+        <!--            android:textColor="@color/white" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="UPDATE"
+            android:textColor="#DF1837"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

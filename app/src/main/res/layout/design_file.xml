@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/details_card"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        android:elevation="20dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripal_effect_rectangle"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:id="@+id/expence_card"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#17DF1837">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/expense"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/rupeeexpence" />
+
+
+                        <TextView
+                            android:id="@+id/expence_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toEndOf="@id/expense"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_centerVertical="true"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/income"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/rupeeincome" />
+
+                    <TextView
+                        android:id="@+id/amount_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/income"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/0/38"
+                    android:textColor="#929292"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/details_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date_txt"
+                    android:layout_centerVertical="true"
+                    android:text="shopping"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="13.10dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

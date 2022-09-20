@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Expence_Form">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actionbar_size_out"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:backgroundTint="#F5F5F5"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/backout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripal_effect_rectangle"
+                android:padding="8dp"
+                android:src="@drawable/backout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/backout"
+                android:fontFamily="sans-serif-medium"
+                android:text="OUT entry of"
+                android:textColor="#DF1837"
+                android:textSize="19dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/details_fill_out"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/actionbar_size_out"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/date_edt_card_ex"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@id/data_edt_out"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/date_edt_ex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:inputType="date"
+                    android:focusable="true"
+                    android:hint="Date"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="14.5dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/name_edt_cardi"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <EditText
+                    android:id="@+id/customer_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:hint="Customer Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="14.5dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RadioGroup
+            android:id="@+id/radio_grup_ex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount_out"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/cash_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#DF1837"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Cash"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/online_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:buttonTint="#DF1837"
+                android:fontFamily="sans-serif-medium"
+                android:text="Online"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/content_card"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@id/name_edt_cardi"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <EditText
+                    android:id="@+id/customer_contect_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:hint="Customer Contact Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="14.5dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amount_out"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/content_card"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/rupee_expence_img"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/rupeeexpence" />
+
+                <EditText
+                    android:id="@+id/amount_out_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/rupee_expence_img"
+                    android:background="@null"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Enter Amount"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="#DF1837"
+                    android:textColorHint="#929292"
+                    android:textCursorDrawable="@drawable/cursor_color_expence"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/data_edt_out"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@id/radio_grup_ex"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <EditText
+                    android:id="@+id/details_Edt_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:hint="Enter Details (Item Name,Bill No,Quantity...)"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#929292"
+                    android:textSize="14.5dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_fill_out"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/save_btn_out"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#DF1837"
+            android:text="Save" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
