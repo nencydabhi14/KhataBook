@@ -13,7 +13,7 @@
 💁‍♀️ Details
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
    
-   👉 some Users enter two types of entries Income and Expence.
+   👉 some Users enter two types of entries Income and Expence..!
 
 
 
