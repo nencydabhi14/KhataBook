@@ -64,7 +64,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-If you have any feedback, please reach out to us at my email Id 📨 Emial ➞  nency.90.dabhi@gmail.com
+If you have any feedback, please reach out to us at my email Id 📨 Email ➞  nency.90.dabhi@gmail.com
 
 
 
